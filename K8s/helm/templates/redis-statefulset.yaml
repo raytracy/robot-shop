@@ -44,7 +44,6 @@ spec:
         storageClassName: {{ .Values.redis.storageClassName }}
         volumeMode: Filesystem
         {{ end }}
-        storageClassName: linode-block-storage-retain 
         resources:
           requests:
             storage: 1Gi
